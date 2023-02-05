@@ -34,13 +34,13 @@ const UserHeaderNav = () => {
           mobileMenu && styles.navMobileActive
         }`}
       >
-        <NavLink to="/conta" end>
+        <NavLink to="/Dogs/conta" end>
           <MinhasFotos /> {mobile && "Minhas fotos"}
         </NavLink>
-        <NavLink to="/conta/estatisticas">
+        <NavLink to="/Dogs/conta/estatisticas">
           <Estatisticas /> {mobile && "Estatísticas"}
         </NavLink>
-        <NavLink to="/conta/postar">
+        <NavLink to="/Dogs/conta/postar">
           <Adicionar /> {mobile && "Adicionar foto"}
         </NavLink>
         <button onClick={userLogout}>

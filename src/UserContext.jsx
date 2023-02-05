@@ -29,7 +29,7 @@ export const UserStorage = ({ children }) => {
       const { token } = await tokenRes.json();
       window.localStorage.setItem("token", token);
       await getUser(token);
-      navigate("/conta");
+      navigate("/Dogs/conta");
     } catch (error) {
       setError(error.message);
       setLoading(false);
@@ -45,7 +45,7 @@ export const UserStorage = ({ children }) => {
       setLoading(false);
       setLogin(false);
       window.localStorage.removeItem("token");
-      navigate("/login");
+      navigate("/Dogs/login");
     },
     [navigate]
   );
